@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ExampleQueries">
+        <item>Start Log Survey</item>
+        <item>Begin survey log</item>
+        <item>Open log survey</item>
+    </string-array>
+    <string-array name="OpenQueries">
+        <item>Open Cyclops</item>
+        <item>Open Survey Camera</item>
+        <item>Open log survey</item>
+    </string-array>
+</resources>

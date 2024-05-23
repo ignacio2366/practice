@@ -1,6 +1,7 @@
 package com.example
 
 import android.app.Application
+import android.widget.Toast
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost

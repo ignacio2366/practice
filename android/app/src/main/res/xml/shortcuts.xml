@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <capability android:name="custome.actions.intent.OPEN_CYCLOPS_SURVEY"
+        app:queryPatterns="@array/OpenQueries"
+    >
+        <intent
+            android:targetPackage="com.example"
+            android:targetClass="com.example.MainActivity"
+            android:action="android.intent.action.VIEW"
+        >
+        </intent>
+    </capability>
+
+    <capability android:name="custom.actions.intent.START_LOG_SURVEY"
+        app:queryPatterns="@array/ExampleQueries">
+        <intent
+            android:targetPackage="com.example"
+            android:targetClass="com.example.MainActivity"
+            android:action="android.intent.action.VIEW"
+            android:data="SAD"
+        >
+        </intent>
+    </capability>
+    <shortcut
+        android:shortcutId="open_camera_surveyor"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_open_app">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example"
+            android:targetClass="com.example.MainActivity"
+            android:data="SAD"
+        >
+        </intent>
+    </shortcut>
+</shortcuts>

@@ -1,14 +1,15 @@
 import { createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-tabs";
 import DashboardScreen from "../screen/DashboardScreen";
+import HomeScreen from "../screen/HomeScreen"
 import Imaged from "../Image/images";
 import styled from "../assets/styled";
+import ClassScreen from "../screen/ClassScreen";
 const Tab = createBottomTabNavigator();
-
 
 const BottomMenu = () => {
     return (
         <Tab.Navigator
-            initialRouteName="Dashboard"
+            initialRouteName="Prayer"
             screenOptions={{ tabBarShowLabel: false, tabBarStyle: { backgroundColor: styled.dark, height: 83, borderWidth: 0 } }}>
 
             <Tab.Screen
@@ -22,8 +23,8 @@ const BottomMenu = () => {
                 }}
             />
             <Tab.Screen
-                name="Invite"
-                component={DashboardScreen}
+                name="Home"
+                component={HomeScreen}
                 options={{
                     headerShown: false,
                     tabBarIcon: ({ color, size }) => (
@@ -33,7 +34,7 @@ const BottomMenu = () => {
             />
             <Tab.Screen
                 name="Prayer"
-                component={DashboardScreen}
+                component={ClassScreen}
                 options={{
                     headerShown: false,
                     tabBarIcon: ({ color, size }) => (
